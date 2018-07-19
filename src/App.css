@@ -1,0 +1,149 @@
+body {
+  background-color: whitesmoke;
+}
+
+.header {
+  background-color: rgb(254, 197, 8);
+  display: flex;
+  align-items: center;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.logo {
+  height: 80px;
+}
+
+.category {
+  font-size: 20px;
+  font-weight: bold;
+}
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+li {
+  /* border: 2px solid blue; */
+  width: 490px;
+  height: 220px;
+  display: flex;
+  margin-bottom: 30px;
+  background-color: white;
+  /* margin: 10px auto; */
+  /* margin: 0; */
+  box-shadow: 1px 2px 4px rgb(0, 0, 0, 0.3);
+}
+
+.poster {
+  height: 220px;
+}
+
+.info {
+  margin-left: 10px;
+  margin-right: 10px;
+  /* text-align: justify; */
+}
+.title {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.date {
+  margin-top: 0;
+  color: grey;
+}
+
+.overview {
+  line-height: 1.5;
+}
+
+button {
+  border-radius: 5px;
+  background-color: whitesmoke;
+  cursor: pointer;
+  border-color: whitesmoke;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.isActive {
+  /* color: blue; */
+  background-color: gold;
+  padding: 5px;
+}
+
+/* .upcoming {
+  color: blue;
+} */
+
+@media screen AND (max-width: 1024px) {
+  .wrapper {
+    width: 97%;
+  }
+  .logoblock {
+    width: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .header {
+    width: 100%;
+  }
+
+  .category {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* background-color: blue; */
+  }
+
+  li {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media screen AND (max-width: 950px) {
+  li {
+    width: 100%;
+  }
+  .overview {
+    font-size: 14px;
+  }
+  .section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .isActive {
+    background-color: gold;
+    width: 150px;
+  }
+  button {
+    /* width: 150px; */
+    /* border: 2px solid red; */
+    outline: none;
+  }
+}
